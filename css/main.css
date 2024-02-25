@@ -1,3 +1,8 @@
+* {
+  border: 1px solid blue;
+  padding: 0px;
+  margin: 0px;
+}
 body {
   background: url(../bg.png);
   font-family: "Times New Roman", Times, serif;
@@ -7,8 +12,10 @@ body {
 }
 nav {
   background-color: #ecdeed;
-  position: relative;
   list-style: none;
+  display: flex;
+  align-items: center;
+  height: 40px;
 }
 
 nav li {
@@ -29,21 +36,23 @@ nav a {
 }
 footer {
   background-color: #cbcc66;
+  display: flex;
+  justify-content: space-between;
+}
+.other-info {
+  align-self: flex-end;
 }
 section {
   width: 70%;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
 }
-section p {
-  float: left;
+section p,
+section form {
   padding: 10px;
   width: 50%;
 }
-section form {
-  padding: 10px;
-}
 aside {
   background-color: white;
-  float: right;
   width: 30%;
   text-align: center;
   color: red;
@@ -58,17 +67,21 @@ container h1 {
   text-align: center;
   color: red;
 }
-.column {
-  float: left;
-}
-
-.column:nth-child(1) {
-  width: 69%;
-}
-.column:nth-child(2) {
-  width: 30%;
+nav ul {
+  width: 70%;
 }
 .search {
+  width: 30%;
   color: red;
   font-weight: bold;
+  justify-content: right;
+}
+.search button {
+  background-color: blue;
+  color: white;
+}
+container,
+article {
+  display: flex;
+  flex-direction: row;
 }
