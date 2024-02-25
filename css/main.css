@@ -68,3 +68,7 @@ container h1 {
 .column:nth-child(2) {
   width: 30%;
 }
+.search {
+  color: red;
+  font-weight: bold;
+}
