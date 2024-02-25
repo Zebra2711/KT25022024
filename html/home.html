@@ -40,50 +40,63 @@
             contributed greatly to the success of flowering plants.
           </p>
           <form action="../html/home.html">
-            <h4>Information</h4>
-            <label for="name">Full Name:</label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-            /><br />
-            <label for="email">Email:</label><br />
-            <input
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            /><br />
-            <label for="Gender">Gender:</label><br />
-            <label for="female"
-              ><input
-                type="radio"
-                id="Gender"
-                name="Gender"
-                value="F"
-                checked="CHECKED"
+            <fieldset>
+              <legend>Information</legend>
+              <label for="name">Full Name:</label><br />
+              <input  
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+                oninvalid="this.setCustomValidity('Vui lòng điền vào trường này')"
+                oninput="this.setCustomValidity('')"
+              /></br><br />
+              <label for="email">Email:</label><br />
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your email"
+                required
+                oninvalid="this.setCustomValidity('Vui lòng điền vào trường này')"
+                oninput="this.setCustomValidity('')"
               />
-              Female</label
-            >
-            <label for="male"
-              ><input type="radio" id="Gender" name="Gender" value="M" />
-              Male</label
-            >
-
-            <br />
-            <input type="submit" value="Submit" />
-            <input type="reset" value="Reset" />
+              <div class="gender">
+                <br />
+                Gender:
+                </br>
+                <label for="female"
+                  ><input
+                    type="radio"
+                    id="Gender"
+                    name="Gender"
+                    value="F"
+                    checked="CHECKED"
+                  />
+                  Female</label
+                >
+                <label for="male"
+                  ><input type="radio" id="Gender" name="Gender" value="M" />
+                  Male</label
+                >
+                <div class="submit-button">
+                  <p><input type="submit" value="Submit" /></p>
+                  <p><input type="reset" value="Reset" /></p>
+                  
+                </div>
+              </div>
+            </fieldset>
           </form>
         </article>
       </section>
       <aside>
         <h2>Flower</h2>
-        <img width="100%" src="../as1.jpg" alt="as1" />
+        <div class="rotate"><img width="100%" src="../as1.jpg" alt="as1" /></div>
         <h2>Flower Conference</h2>
-        <img width="100%" src="../as2.jpg" alt="as2" />
+        <div class="rotate"><img width="100%" src="../as2.jpg" alt="as2" /></div>
         <h2>Flower Pot</h2>
-        <img width="100%" src="../as3.jpg" alt="as3" />
+        <div class="rotate"><img width="100%" src="../as3.jpg" alt="as3" /></div>
       </aside>
     </container>
     <footer>

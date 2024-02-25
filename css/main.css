@@ -1,5 +1,4 @@
 * {
-  border: 1px solid blue;
   padding: 0px;
   margin: 0px;
 }
@@ -38,6 +37,8 @@ footer {
   background-color: #cbcc66;
   display: flex;
   justify-content: space-between;
+  padding-top: 5px;
+  padding-bottom: 1em;
 }
 .other-info {
   align-self: flex-end;
@@ -46,10 +47,17 @@ section {
   width: 70%;
   background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #3f87a6);
 }
+section h1 {
+  padding: 1em;
+}
 section p,
 section form {
-  padding: 10px;
   width: 50%;
+}
+section p {
+  padding: 1em;
+}
+section form {
 }
 aside {
   background-color: white;
@@ -58,11 +66,7 @@ aside {
   color: red;
   border-style: inset;
 }
-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 container h1 {
   text-align: center;
   color: red;
@@ -84,4 +88,52 @@ container,
 article {
   display: flex;
   flex-direction: row;
+}
+form input[type="text"] {
+  width: 90%;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: outset;
+  border-width: 2px;
+}
+fieldset {
+  padding: 10px;
+  margin: 0em 1em 0em 1em;
+  border-width: 2px;
+  border-style: inset;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.submit-button p {
+  margin-top: 2em;
+  padding: 5px;
+  text-align: center;
+}
+.submit-button input {
+  font-weight: bolder;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+}
+aside h2 {
+  text-shadow: 2px 2px 5px rgb(255, 145, 0);
+  border-bottom: 1px dotted red;
+  margin-bottom: 5px;
+}
+form input[type="text"],
+.submit-button input {
+  box-shadow: 5px 5px 5px gray;
+}
+nav li a.active {
+  color: blue;
+}
+.rotate:hover {
+  transform: rotate(20deg);
 }
