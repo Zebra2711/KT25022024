@@ -26,7 +26,9 @@ nav li {
   margin: 0px 5px 0px;
   text-align: center;
 }
-
+nav li a:hover:not(.active) {
+  color: red;
+}
 nav a {
   color: purple;
   font-weight: bold;
@@ -39,6 +41,9 @@ footer {
   justify-content: space-between;
   padding-top: 5px;
   padding-bottom: 1em;
+}
+footer p {
+  margin: 0px 10px 0px 10px;
 }
 .other-info {
   align-self: flex-end;
@@ -56,8 +61,6 @@ section form {
 }
 section p {
   padding: 1em;
-}
-section form {
 }
 aside {
   background-color: white;
@@ -136,4 +139,11 @@ nav li a.active {
 }
 .rotate:hover {
   transform: rotate(20deg);
+}
+container section article p::first-letter {
+  font-weight: bolder;
+  text-indent: 20px;
+}
+container section article p {
+  text-indent: 30px;
 }
