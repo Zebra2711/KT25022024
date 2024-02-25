@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="../css/main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#aboutus">ABOUT US</a></li>
+        <li><a href="#products">PRODUCTS</a></li>
+        <li><a class="active" href="#contact">CONTACT</a></li>
+        <li class="search">SEARCH:</li>
+        <li class="search">
+          <input type="text" name="search" placeholder="Search here..." />
+        </li>
+        <li><button>Go</button></li>
+      </ul>
+    </nav>
+    <header>
+      <img width="100%" src="../Header.jpg" alt="" />
+    </header>
+    <container>
+      <section class="column">
+        <h1>Introduction - Contact</h1>
+        <p>
+          Flowering plants are plants which produce flowers as their
+          reproductive structures. They come in a great variety of shapes and
+          sizes and include grasses, sedges, rushes, many trees, as well as
+          familiar plants like daffodils and daisies. Flowers often, though not
+          always, have brightly coloured petals. The flowers conceal inside them
+          the female ovules which will be fertilised by pollen grains. The
+          pollen grains are the male parts of the flower. Fertilised ovules
+          develop into the seeds from which new plants will grow. The fact that
+          the ovules are protected inside flowers has contributed greatly to the
+          success of flowering plants.
+        </p>
+        <form action="../html/home.html">
+          <h4>Information</h4>
+          <label for="name">Full Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+          /><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email"
+          /><br />
+          <label for="Gender">Gender:</label><br />
+          <label for="female"
+            ><input
+              type="radio"
+              id="Gender"
+              name="Gender"
+              value="F"
+              checked="CHECKED"
+            />
+            Female</label
+          >
+          <label for="male"
+            ><input type="radio" id="Gender" name="Gender" value="M" />
+            Male</label
+          >
+
+          <br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </form>
+      </section>
+      <aside class="column">
+        <h2>Flower</h2>
+        <img width="100%" src="../as1.jpg" alt="as1" />
+        <h2>Flower Conference</h2>
+        <img width="100%" src="../as2.jpg" alt="as2" />
+        <h2>Flower Pot</h2>
+        <img width="100%" src="../as3.jpg" alt="as3" />
+      </aside>
+    </container>
+    <footer>
+      <p>MSSV: 21139151</p>
+      <p>DHKHMT17B - Khoa CNTT</p>
+    </footer>
+  </body>
+</html>

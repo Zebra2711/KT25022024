@@ -1,0 +1,70 @@
+body {
+  background: url(../bg.png);
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 960px;
+}
+nav {
+  background-color: #ecdeed;
+  position: relative;
+  list-style: none;
+}
+
+nav li {
+  list-style: none;
+  line-height: 50px;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  margin: 0px 5px 0px;
+  text-align: center;
+}
+
+nav a {
+  color: purple;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+footer {
+  background-color: #cbcc66;
+}
+section {
+  width: 70%;
+}
+section p {
+  float: left;
+  padding: 10px;
+  width: 50%;
+}
+section form {
+  padding: 10px;
+}
+aside {
+  background-color: white;
+  float: right;
+  width: 30%;
+  text-align: center;
+  color: red;
+  border-style: inset;
+}
+container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+container h1 {
+  text-align: center;
+  color: red;
+}
+.column {
+  float: left;
+}
+
+.column:nth-child(1) {
+  width: 69%;
+}
+.column:nth-child(2) {
+  width: 30%;
+}
